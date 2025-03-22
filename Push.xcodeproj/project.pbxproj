@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		33DF4D5C2D8F060E00BE0B53 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 33DF4D5B2D8F060E00BE0B53 /* FirebaseMessaging */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		33DF4D382D8F030B00BE0B53 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		33DF4D412D8F030B00BE0B53 /* PushUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		33DF4D582D8F049E00BE0B53 /* Exceptions for "Push" folder in "Push" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 33DF4D252D8F030900BE0B53 /* Push */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		33DF4D282D8F030900BE0B53 /* Push */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				33DF4D582D8F049E00BE0B53 /* Exceptions for "Push" folder in "Push" target */,
+			);
 			path = Push;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33DF4D5C2D8F060E00BE0B53 /* FirebaseMessaging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +96,7 @@
 				33DF4D282D8F030900BE0B53 /* Push */,
 				33DF4D3A2D8F030B00BE0B53 /* PushTests */,
 				33DF4D442D8F030B00BE0B53 /* PushUITests */,
+				33DF4D5A2D8F060E00BE0B53 /* Frameworks */,
 				33DF4D272D8F030900BE0B53 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +109,13 @@
 				33DF4D412D8F030B00BE0B53 /* PushUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		33DF4D5A2D8F060E00BE0B53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +138,7 @@
 			);
 			name = Push;
 			packageProductDependencies = (
+				33DF4D5B2D8F060E00BE0B53 /* FirebaseMessaging */,
 			);
 			productName = Push;
 			productReference = 33DF4D262D8F030900BE0B53 /* Push.app */;
@@ -195,6 +222,9 @@
 			);
 			mainGroup = 33DF4D1D2D8F030900BE0B53;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				33DF4D592D8F05E900BE0B53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 33DF4D272D8F030900BE0B53 /* Products */;
 			projectDirPath = "";
@@ -392,13 +422,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Push/Push.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Push/Preview Content\"";
+				DEVELOPMENT_TEAM = M8Y82YQ4GF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Push/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Using face Id to unlock the App";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -407,8 +441,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rrichards.net.Push;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -417,13 +454,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Push/Push.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Push/Preview Content\"";
+				DEVELOPMENT_TEAM = M8Y82YQ4GF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Push/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Using face Id to unlock the App";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -432,8 +473,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rrichards.net.Push;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -541,6 +585,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		33DF4D592D8F05E900BE0B53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		33DF4D5B2D8F060E00BE0B53 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33DF4D592D8F05E900BE0B53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 33DF4D1E2D8F030900BE0B53 /* Project object */;
 }
